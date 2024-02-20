@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+header{
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+header a{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin: 0px 20px;
+    color:#8f8e8e;
+    transition: 0.1s;
+    
+
+}
+header a:hover{
+    transform: scale(1.1);
+    color: #f1f1f1;
+}
+a:link{
+    padding: 20px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+main{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+main h1, h2{
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.conteudo{
+    background-color: #ffffff;
+    padding: 40px 8%;
+    max-width: 1280px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    
+}
+.sobre{
+    text-align:justify;
+}
+.rodape{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+}
+body{
+    background-image: url("Imagens/Unb.jpg");
+} 
