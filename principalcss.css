@@ -42,7 +42,8 @@ a:link {
     text-align: center;
     text-decoration: none;
 }
-.banner{
+
+.banner {
     position: relative;
 }
 
@@ -70,9 +71,10 @@ main {
     line-height: 1.5;
 }
 
-.interface{
+.interface {
     display: flex;
 }
+
 .data {
     display: flex;
     justify-content: center;
@@ -82,20 +84,25 @@ main {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
 }
-.data h1, .data p{
+
+.data h1,
+.data p {
     color: white;
     -webkit-text-stroke-color: white;
 
 }
-.data p{
+
+.data p {
     font-size: 2rem;
     font-weight: 700;
 }
-.historia p{
+
+.historia p {
     margin-bottom: 10px;
 }
+
 .historia button {
-    padding: 10px; 
+    padding: 10px;
     border: none;
     color: white;
     background-color: black;
@@ -105,42 +112,49 @@ main {
     margin: 0px 5px;
     transition: 0.2s;
 }
+
 .historia button:hover {
     color: white;
     box-shadow: 0px 0px 8px black;
     transition: 0.2s;
 }
 
-.Enterface{
-    padding: 20px ;
+.Enterface {
+    padding: 20px;
 }
-.Enterface .Textos{
+
+.Enterface .Textos {
     display: flex;
     text-align: center;
     gap: 40px;
     font-family: 'Times New Roman', Times, serif;
 }
-.Enterface .Textos h3{
+
+.Enterface .Textos h3 {
     font-size: 1.5rem;
 }
-.Enterface .Faculdade-box{
+
+.Enterface .Faculdade-box {
     color: #0f0f0f;
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
     transition: 0.2s;
 }
-.Enterface .Faculdade-box:hover{
+
+.Enterface .Faculdade-box:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px black;
     transition: 0.2s;
 }
-.Enterface .Faculdade-box p{
+
+.Enterface .Faculdade-box p {
     text-align: justify;
     font-size: 1rem;
     line-height: 1.5;
 }
-.Enterface .Faculdade-box h3{
+
+.Enterface .Faculdade-box h3 {
     font-size: 28px;
     margin: 15px 0;
     font-family: 'Times New Roman', Times, serif;
@@ -187,27 +201,30 @@ h2 {
 .sobre {
     text-align: justify;
 }
-.Box-inscreva{
+
+.Box-inscreva {
     padding: 30px 4%;
 }
-.Box-inscreva #incre{
+
+.Box-inscreva #incre {
     top: 50%;
     left: 50%;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 90%;
     max-width: 600px;
 }
 
-.Box-inscreva fieldset{
+.Box-inscreva fieldset {
     border-radius: 30px;
     padding: 20px;
     text-align: center;
     margin: auto;
-    box-shadow: 0px 0px 10px black  ;
+    box-shadow: 0px 0px 10px black;
 }
-.Box-inscreva a{
-    padding: 10px; 
+
+.Box-inscreva a {
+    padding: 10px;
     border: none;
     color: white;
     background-color: Blue;
@@ -217,12 +234,12 @@ h2 {
     margin: 0px 5px;
     transition: 0.2s;
 }
+
 .Box-inscreva a:hover {
     color: white;
     box-shadow: 0px 0px 8px blue;
     transition: 0.2s;
 }
-
 
 .rodape {
     background-color: #0f0f0f;
