@@ -9,14 +9,15 @@
     height: 50px;
 }
 header{
-    background-color: black;
+    background-color: #0f0f0f;
     width: 100%;
-    position: sticky;
+    position: absolute;
     top: 0;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content:center;
+    z-index: 999;
 }
 header a{
     font-family: 'Times New Roman', Times, serif;
@@ -24,8 +25,6 @@ header a{
     margin: 0px 20px;
     color:#8f8e8e;
     transition: 0.1s;
-    
-
 }
 header a:hover{
     transform: scale(1.1);
@@ -38,8 +37,36 @@ a:link{
     text-align: center;
     text-decoration: none;
 }
+.banner{
+    background: url('Imagens/Imagemfaculdade1.jpeg') no-repeat center ;
+    padding: 300px;
+    position: relative;
+    width: 100%;
+}
+.Transicao ul{
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none;
+    backdrop-filter:  blur(10px);
+     background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+}
+.Transicao ul li{
+    display: inline-block;
+}
+.Transicao ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.Transicao ul li a:hover{
+    color: blue;
+}
 main{
-    
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -49,6 +76,20 @@ main h1, h2{
     margin: 20px 0px;
 }
 
+.cobef strong{
+    color:blue;
+}
+.cobef a{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    transition: 0.1s;
+    padding: 0px 10px;
+    border-radius: 5px;
+    color: Blue;
+}
+.cobef a:hover{
+    color: #0f0f0f;
+}
 .conteudo{
     background-color: #ffffff;
     padding: 40px 8%;
@@ -61,12 +102,13 @@ main h1, h2{
     text-align:justify;
 }
 .rodape{
-    background-color: black;
+    background-color: #0f0f0f;
     color: white;
     text-align: center;
     padding: 20px;
     position: sticky;
 }
 body{
-    background-image: url("Imagens/Unb.jpg");
+    background-color: #0f0f0f;
+
 } 
