@@ -96,16 +96,22 @@ main {
     font-size: 2rem;
     font-weight: 700;
 }
+.historia{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .historia p {
     margin-bottom: 10px;
 }
 
-.historia button {
+.historia  span>a{
     padding: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: blue;
     font-size: 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -113,10 +119,10 @@ main {
     transition: 0.2s;
 }
 
-.historia button:hover {
+.historia span>a:hover {
     color: white;
-    box-shadow: 0px 0px 8px black;
-    transition: 0.2s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 8px blue;
 }
 
 .Enterface {
@@ -215,7 +221,7 @@ h2 {
     max-width: 600px;
 }
 
-.Box-inscreva fieldset {
+.Box-inscreva #inscre{
     border-radius: 30px;
     padding: 20px;
     text-align: center;
@@ -238,7 +244,7 @@ h2 {
 .Box-inscreva a:hover {
     color: white;
     box-shadow: 0px 0px 8px blue;
-    transition: 0.2s;
+    transform: scale(1.1);
 }
 
 .rodape {
