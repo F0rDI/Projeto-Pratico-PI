@@ -5,11 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
 header {
     background-color: #0f0f0f;
     width: 100%;
@@ -22,17 +17,33 @@ header {
     z-index: 999;
 }
 
-header a {
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px; 
+}
+
+header nav ul li a {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-    margin: 0px 20px;
     color: #8f8e8e;
+    text-decoration: none;
     transition: 0.1s;
 }
 
-header a:hover {
+header nav ul li a:hover {
     transform: scale(1.1);
     color: #f1f1f1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
 }
 
 a:link {
@@ -117,7 +128,7 @@ main {
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .Enterface .Faculdade-box:hover {
@@ -144,8 +155,6 @@ h2 {
     text-align: center;
     margin: 20px 0px;
 }
-
-
 .cobef span {
     font-weight: 700;
     color: blue;
@@ -171,8 +180,6 @@ h2 {
     padding: 40px 8%;
     max-width: 1280px;
     margin: auto;
-    box-shadow: 0px 0px 10px black;
-
 }
 
 .sobre {
@@ -209,13 +216,15 @@ h2 {
     border-radius: 20px;
     cursor: pointer;
     margin: 0px 5px;
-    transition: 0.2s;
+    transition: 0.3s;
+    
 }
 
 .Box-inscreva a:hover {
     color: white;
     box-shadow: 0px 0px 8px blue;
     transform: scale(1.1);
+    
 }
 
 .rodape {
@@ -230,9 +239,10 @@ h2 {
     header {
         flex-direction: column;
         text-align: center;
-    }
-    header a {
-        margin: 10px 0px;
+    } 
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
     }
     .professores-hist {
         flex-direction: column;
@@ -249,9 +259,8 @@ h2 {
         align-items: center;
         border: 55px;
     }
-    
 }
 
-body {
-    background-color: #0f0f0f;
+body{
+    background-color: #f1f1f1;
 }
