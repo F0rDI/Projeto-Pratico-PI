@@ -96,34 +96,6 @@ main {
     font-size: 2rem;
     font-weight: 700;
 }
-.historia{
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.historia p {
-    margin-bottom: 10px;
-}
-
-.historia  span>a{
-    padding: 10px;
-    border: none;
-    color: white;
-    background-color: blue;
-    font-size: 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 0px 5px;
-    transition: 0.2s;
-}
-
-.historia span>a:hover {
-    color: white;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 8px blue;
-}
 
 .Enterface {
     padding: 20px;
@@ -164,7 +136,6 @@ main {
     font-size: 28px;
     margin: 15px 0;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1rem;
     line-height: 1.5;
 }
 
@@ -253,6 +224,32 @@ h2 {
     text-align: center;
     padding: 20px;
     position: sticky;
+}
+
+@media screen and (max-width: 1150px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header a {
+        margin: 10px 0px;
+    }
+    .professores-hist {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape {
+        position: relative;
+    }
+    .sobre {
+        padding: 50px 8%;
+    }
+    .Textos{
+        flex-direction: column;
+        align-items: center;
+        border: 55px;
+    }
+    
 }
 
 body {

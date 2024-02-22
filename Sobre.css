@@ -34,6 +34,76 @@ header a:hover {
     transform: scale(1.1);
     color: #f1f1f1;
 }
+.sobre{
+    box-shadow: 0px 0px 10px#000000;
+    padding: 50px 4%;
+    
+}
+.ceo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 18vh;
+}
+.img-ceo img{
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+.txt-ceo{
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bold;
+}
+.titulo{
+    color: blue;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.professores{
+    padding: 50px 4%;
+}
+
+.professores-hist{
+    display: flex;
+    gap: 15px;
+
+}
+.titulo2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: blue;
+}
+.img-professor img{
+    width: 130px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 0px #0f0f0f;
+}
+
+.professor{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    transition: 0.2s;
+
+}
+.professor p{
+    font-size: 15px;
+    text-align: justify;
+}
+.professor:hover{
+    transform: scale(0.9);
+    box-shadow: 0px 0px 10px 0px #0f0f0f;
+    border-radius: 10px;
+}
 
 a:link {
     padding: 20px 20px;
@@ -50,6 +120,29 @@ a:link {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 1150px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header a {
+        margin: 10px 0px;
+    }
+    .professores-hist{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape{
+        position: relative;
+    }
+    .sobre{
+        padding: 50px 8%;
+    }
+    .professores{
+        padding: 50px 8%;
+    }
 }
 
 body {
