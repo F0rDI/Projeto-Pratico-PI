@@ -53,6 +53,17 @@ a:link {
     text-align: center;
     text-decoration: none;
 }
+.nav-menu a{
+    color: white;
+    background-color: blue;
+    transition: 0.2s;
+}
+.nav-menu a:hover{
+    color: blue;
+    background-color: white;
+    box-shadow: 0px 0px 10px blue;
+    transform: scale(1.1);
+}
 
 .banner {
     position: relative;
@@ -233,8 +244,48 @@ h2 {
     text-align: center;
     padding: 20px;
     position: sticky;
+    bottom: 0;
+    width: 100%;
 }
+.contato-txt{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.rod img{
+    width: 22px;
+    margin-right: 5px; 
+    margin: 0;
+    padding: 0;
 
+}
+.rod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rod span{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+
+}
+.contato-txt a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+    padding: 0px 0px 10px;
+}
+.contato-txt a:hover{
+    color: blue;
+    transform: scale(0.9);
+}
 @media screen and (max-width: 1150px) {
     header {
         flex-direction: column;

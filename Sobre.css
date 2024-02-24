@@ -130,11 +130,51 @@ a:link {
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
 }
+.contato-txt h1{
+    color: #f1f1f1
+}
+.contato-txt{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    flex-direction: column;
+}
+.rod img{
+    width: 22px;
+    margin-right: 5px; 
+    margin: 0;
+    padding: 0;
 
+}
+.rod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rod span{
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+
+}
+.contato-txt a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+    padding: 0px 0px 10px;
+}
+.contato-txt a:hover{
+    color: blue;
+    transform: scale(0.9);
+}
 @media (max-width: 1150px) {
     header {
         flex-direction: column;
