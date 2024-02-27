@@ -269,8 +269,11 @@ a:link {
         margin-inline: 0vh;
         padding: 20px;
     }
-    .Enterface{
+    .interface-box{
         flex-direction: column;
-        gap: 10px;
+        margin: 0;
+    }
+    .box-local{
+        flex-direction: column;
     }
 }
