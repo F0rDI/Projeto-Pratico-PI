@@ -23,50 +23,102 @@
 
     <main>
         <section class="endereco">
-            <div class="endereco-box">
-                <h1 class="titulo">Endereço</h1>
-                <form class="endereco-txt">
-                    <div class="campo">
-                        <label>Endereço:</label>
-                        <input required type="text" class="end">
-                    </div> <!--fecha campo-->
-                    <div class="campo">
-                        <label>Numero:</label>
-                        <input type="number" class="numero">
-                    </div> <!--fecha campo-->
-                    <div class="campo">
-                        <label>Bairro:</label>
-                        <input type="text" class="bairro" >
-                    </div> <!--fecha campo-->
-                    <div class="campo">
-                        <label>Cidade:</label>
-                        <input type="text">
-                    </div> <!--fecha campo-->
-                </form>
-            </div> <!--fecha endereco-box-->
-            <div class="perguntas">
-                <h1 class="titulo">Perguntas</h1>
-                <form class="perguntas-txt">
-                    <div class="campo">
-                        <label>Idade:</label>
-                        <input type="number" class="idade">
-                    </div> <!--fecha campo-->
-                    <div class="campo">
-                        <label>Email:</label>
-                        <input required type="email" class="email">
-                    </div> <!--fecha campo-->
-                    <div class="campo">
-                        <label>Telefone:</label>
-                        <input required type="tel" class="telefone">
-                    </div> <!--fecha campo-->
-                    <div class="campo">
-                        <label>CPF:</label>
-                        <input required type="cpf" class="profissao">
-                    </div> <!--fecha campo-->
-                </form>
-            </div>
+            <form action="Parabens.html" method="get">
+                <div class="flex">
+                    <div class="endereco-box">
+                        <h1 class="titulo">Endereço</h1>
+                        <div class="endereco-txt">
+                            <div class="campo">
+                                <label for="endereco">Endereço:</label>
+                                <input required type="text" id="endereco" name="endereco" class="end">
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="numero">Numero:</label>
+                                <input type="number" class="numero" id="numero" name="numero" required>
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="bairro">Bairro:</label>
+                                <input type="text" class="bairro" id="bairro" name="bairro" placeholder="rua example">
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="cidade">Cidade:</label>
+                                <input required type="text" id="cidade" name="cidade">
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="estado">Estado:</label>
+                                <select required id="estado" name="estado">
+                                    <option value="">Selecione o Estado</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div> <!--fecha endereco-box-->
+                    <div class="perguntas">
+                        <h1 class="titulo">Perguntas</h1>
+                        <div class="perguntas-txt">
+                            <div class="campo">
+                                <label>Idade:</label>
+                                <input required type="number" class="idade" id="idade" name="idade" maxlength="3">
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="email">Email:</label>
+                                <input required type="email" id="email" name="email" class="email" placeholder="example@example.com">
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="telefone">Telefone:</label>
+                                <input required type="tel" class="telefone" id="telefone" name="telefone" placeholder="(99) 99999-9999">
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="cpf">CPF:</label>
+                                <input  type="text" id="cpf" name="cpf" class="profissao" required pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}" placeholder="xxx.xxx.xxx-xx">
+                            </div> <!--fecha campo-->
+                            <div class="campo">
+                                <label for="data">Data de Nacimento:</label>
+                                <input required type="date" class="profissao" id="data" name="data">
+                            </div> <!--fecha campo-->
+                            <div class="check-box">
+                                <input required type="radio" class="profissao" name="box[]" id="box">
+                                <label>Estudante</label>
+                                <input required type="radio" class="profissao" name="box[]" id="box">
+                                <label>Não Estudante</label>
+                            </div> <!--fecha check-box-->
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="reset" class="botao">Limpar</button>
+                    <button class="botao">Enviar</button>
+                </div>
+            </form>
         </section>
-        <button class="botao">Enviar</button>
+        
     </main>
 
     <footer>

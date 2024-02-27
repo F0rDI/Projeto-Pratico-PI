@@ -81,16 +81,13 @@ header{
 
 .interface{
     text-align: center;
-    align-items: center;
 }
-.data {
-    margin-top: 10vh;
-    margin-inline: 45vh;
-    padding: 11vh;
+.data{
+    margin: 150px;
     color: #f1f1f1;
+    max-width: 1200px;
     font-size: 20px;
     border-radius: 40px;
-    
 }
 .data h1{
     text-shadow: black 0.1em 0.1em 0.1em;
@@ -268,7 +265,6 @@ a:link {
     .data{
         margin-top: 20vh;
         margin-inline: 5vh;
-        padding: 11vh;
     }
     .sobre{
         margin-top: 5vh;
