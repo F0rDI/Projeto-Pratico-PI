@@ -13,6 +13,7 @@ header{
     top: 0;
     padding: 1rem 2rem;
     position: sticky;
+    z-index: 99999;
 }
 .menu{
     padding: 0 2rem;
@@ -22,7 +23,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 99999;
+    
 }
 
 .botao-inscri{
@@ -142,6 +143,7 @@ header{
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px 0px #0f0f0f;
+    z-index: 99;
 }
 
 .professor{
