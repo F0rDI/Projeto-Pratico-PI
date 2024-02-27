@@ -31,7 +31,8 @@ header{
 .botao-inscri{
     font-weight: bold;
     font-size: 1rem;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(50px);
+    
     transition: scale 0.25s ease;
     color: #0f0f0f;
     padding: 0.9rem 1rem;
@@ -83,9 +84,12 @@ header{
     margin-inline: 45vh;
     padding: 11vh;
     color: #f1f1f1;
-    background-color: #0f0f0f;
+    font-size: 20px;
     border-radius: 40px;
-    box-shadow: 0px 0px 30px 0px #0f0f0f;
+    
+}
+.data h1{
+    text-shadow: black 0.1em 0.1em 0.1em;
 }
 .sobre{
     text-align: center;
@@ -97,23 +101,54 @@ header{
     background-color: #f1f1f1;
     box-shadow: 0px 0px 10px 0px #0f0f0f;
 }
-.titulo h1{
+.textos h1,h2{
     font-size: 30px;
+    text-align: center;
 }
-
-.titulo p{
+.textos p{
     margin-bottom: 10px;
     margin-top: 20px;
     text-align: justify;
     font-size: 17px;
     padding: 30px;
 }
-
-.titulo span{
+.textos span{
     font-weight: bold;
     color: blue;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-color: 2px;
+}
+.Enterface{
+    margin-inline: 0vh;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 10px 0px #0f0f0f;
+    text-align: center;
+    display: flex;
+    gap: 40px;
+}
+.Enterface p{
+    text-align: justify;
+}
+
+.Enterface .Faculdade-box {
+    color: #0f0f0f;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.Enterface .Faculdade-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Inscreva-se */
+
+.box-inscreva{
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 10px 0px #0f0f0f;
+    padding: 20px;
 }
 
 
@@ -213,5 +248,9 @@ a:link {
         margin-top: 5vh;
         margin-inline: 0vh;
         padding: 20px;
+    }
+    .Enterface{
+        flex-direction: column;
+        gap: 10px;
     }
 }
