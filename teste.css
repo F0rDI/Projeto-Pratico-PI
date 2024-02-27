@@ -9,28 +9,25 @@ li{
 }
 
 header {
-    position: relative;
+    /* position: relative; */
     padding: 0 2rem;
+
 }
 
+header{
+    position: sticky;
+    top: 0;
+}
 .menu{
     width: 100%;
     height: 60px;
-    max-width:  1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.menu .links{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background-color: #0f0f0f;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px #000000;
-}
+
 .botao-inscri{
     font-weight: bold;
     font-size: 1rem;
@@ -52,10 +49,18 @@ header {
     scale: 0.95;
     color: #f1f1f1;
 }
-
+.menu .links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #000000;
+}
 .links a{
     text-decoration: none;
-    color: #f1f1f1;
+    color: #8f8e8e;
     font-weight: bold;
     transition: 0.2s;
     font-size: 1rem;
@@ -64,20 +69,53 @@ header {
 }
 .links a:hover{
     transform: scale(1.2);
+    color: #f1f1f1;
 }
 
-.menu-hamb{
-    display: none;
-    cursor: pointer;
+/* configurações da interface */
+
+.interface{
+    text-align: center;
+    align-items: center;
+}
+.data {
+    margin-top: 20vh;
+    margin-inline: 45vh;
+    padding: 11vh;
+    color: #f1f1f1;
+    background-color: #0f0f0f;
+    border-radius: 40px;
+    box-shadow: 0px 0px 30px 0px #0f0f0f;
+}
+.sobre{
+    text-align: center;
+    align-items: center;
+    justify-items: auto;
+    margin-top: 5vh;
+    margin-inline: 0vh;
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 10px 0px #0f0f0f;
+}
+.titulo h1{
+    font-size: 30px;
 }
 
-.menu-hamb div{
-    width: 32px;
-    height: 2px;
-    font-size: 1.5rem;
-    background: #0f0f0f;
-    margin: 8px;
+.titulo p{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 17px;
+    padding: 30px;
 }
+
+.titulo span{
+    font-weight: bold;
+    color: blue;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-color: 2px;
+}
+
 
 /* logo do site */
 
@@ -93,7 +131,7 @@ header {
 body{
     background: url("img-teste.jpg") no-repeat center center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
     backdrop-filter: blur(5px);
 }
 
@@ -112,7 +150,7 @@ a:link {
     color: #8f8e8e;
     text-align: center;
     padding: 20px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
 }
@@ -165,5 +203,15 @@ a:link {
     .menu {
         flex-direction: column;
         gap: 20px;
+    }
+    .data{
+        margin-top: 20vh;
+        margin-inline: 5vh;
+        padding: 11vh;
+    }
+    .sobre{
+        margin-top: 5vh;
+        margin-inline: 0vh;
+        padding: 20px;
     }
 }
