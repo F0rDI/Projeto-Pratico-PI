@@ -12,7 +12,6 @@ li{
     position: sticky;
     top: 0;
     width: 100%;
-    height: 60px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -70,6 +69,88 @@ a:link {
     text-decoration: none;
 }
 
+/* configurações de inscrição - endereço */
+
+.endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-inline: 30vh;
+}
+
+/* Perguntas */
+
+.perguntas{
+    margin-top: 8vh;
+    padding: 30px;
+    text-align: center;
+    align-items: justify;
+    background-color: #0f0f0f;
+    border-radius: 20px;
+}
+.perguntas-txt{
+    color: #f1f1f1;
+    text-align: left;
+    font-size: 20px;
+    align-items: justify;
+}
+
+.perguntas-txt .campo{
+    display: flex;
+    flex-direction: column;
+    padding: 0.9vh
+}
+.campo input{
+    padding: 0.8vh;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px;
+}
+
+/* Endereço */
+
+.endereco-box{
+    margin-top: 8vh;
+    padding: 30px;
+    text-align: center;
+    align-items: justify;
+    background-color: #0f0f0f;
+    border-radius: 20px;
+}
+.endereco h1{
+    font-size: 30px;
+    margin-bottom: 4vh;
+    color: #f1f1f1;
+}
+.endereco-txt{
+    color: #f1f1f1;
+    text-align: left;
+    font-size: 20px;
+    align-items: justify;
+}
+.endereco-txt .campo{
+    display: flex;
+    flex-direction: column;
+    padding: 0.9vh
+}
+
+/* Campo */
+
+.campo input{
+    padding: 0.8vh;
+    border-radius: 5px;
+    outline: none;
+    margin: 5px;
+}
+.campo input:focus{
+    border: 3px solid blue;
+}
+.campo input:focus input:valid{
+    border: 3px solid green;   
+}
+
+
 /* configurar o Rodapé */
 
 .rodape {
@@ -94,6 +175,9 @@ a:link {
     font-weight: bold;
     justify-content: center;
     flex-direction: column;
+}
+.contato-txt a:visited{
+    color: #8f8e8e;
 }
 
 .rod img{
