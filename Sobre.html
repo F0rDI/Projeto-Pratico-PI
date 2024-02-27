@@ -8,25 +8,27 @@
     </head>
     <body>
 
-        <header>
-            <div class="img-menu">
-                <img class="logo" src="Logo.png" alt="Logo">
-            </div><!-- fecha o menu. -->
+        <header> 
             <nav>
-                <ul>
-                    <li><a href="index.html">inicio</a></li>
-                    <li><a href="inscricao.html">Inscrição</a></li>
-                    <li><a href="Sobre.html">Sobre</a></li>
-                </ul>
+                <div class="menu">
+                    <img class="logo" src="Logo.png" alt="Logo">
+                            <ul class="links">
+                                <li><a href="index.html">inicio</a></li>
+                                <li><a href="Sobre.html">Sobre</a></li>
+                                <li class="ceo"><a href="#ceo">CEO</a></li>
+                            </ul>
+                    <a class="botao-inscri" href="inscricao.html">Inscrição</a>
+                </div>
             </nav>
         </header>
+        
         <main>
             <section class="sobre">
                 <div class="ceo">
                     <div class="img-ceo">
                         <img src="ceo-site.jpg" alt="CEO">
                     </div> <!--imagem ceo-->
-                    <div class="txt-ceo">
+                    <div id="ceo" class="txt-ceo">
                         <h1 class="titulo">CEO</h1>
                         <p><strong>Nome:</strong> Pedro Vilela</p>
                         <p><strong>Idade:</strong> 20 anos</p>
