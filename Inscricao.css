@@ -7,6 +7,15 @@
 li{
     list-style: none;
 }
+
+nav{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 header{
     position: sticky;
     top: 0;
