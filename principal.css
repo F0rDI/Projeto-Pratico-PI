@@ -113,11 +113,12 @@ header .menu #pagina-principal:hover{
     text-align: center;
     align-items: center;
     justify-items: auto;
-    margin-top: 5vh;
-    margin-inline: 0vh;
+    margin: 30px;
     padding: 20px;
-    background-color: #f1f1f1de;
-    box-shadow: 0px 10px 10px 0px #0f0f0f;
+    border-radius: 20px;
+    color: #f1f1f1;
+    background-color: #0f0f0fdc;
+    box-shadow: 0px 0px 30px 0px #f1f1f1;
 }
 .textos h1,h2{
     font-size: 30px;
@@ -133,20 +134,24 @@ header .menu #pagina-principal:hover{
 }
 .textos span{
     font-weight: bold;
-    color: blue;
-    text-shadow: #8d8d8d 0.1em 0.1em 0.1em;
+    color: #f1f1f1;
+    text-shadow: blue 0.1em 0.1em 0.1em;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-color: 2px;
 }
 .interface-box{
+    margin: 30px;
     padding: 20px;
-    background-color: #f1f1f1de;
+    border-radius: 20px;
+    background-color: #0f0f0fdc;
+    box-shadow: 0px 0px 30px #f1f1f1;
     text-align: center;
     display: flex;
     gap: 40px;
+    margin-bottom: 20px;
 }
 .interface-box .Faculdade-box {
-    color: #0f0f0f;
+    color: #f1f1f1;
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
@@ -154,45 +159,11 @@ header .menu #pagina-principal:hover{
     margin: 5vh;
     margin-inline: 0vh;
 }
-.interface-box .Faculdade-box:hover {
+.interface-box .Faculdade-box:hover{
     transform: scale(1.1);
-    box-shadow: 0px 0px 10px black;
-    
-}
-
-/* mapa responsivo */
-
-
-.map-responsive iframe{
-    width: 100%;
-    height: 60vh;
-}
-/* local */
-
-
-.img-faculdade{
-    width: 25vh;
-    height: 25vh;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px black;
-}
-
-.box-local{
     background-color: #f1f1f1;
-    box-shadow: 0px 0px 10px 0px #0f0f0f;
-    padding: 20px;
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.inscre{
-    margin-top: 5vh;
-    margin-inline: 0vh;
-    padding: 20px;
-    background-color: #f1f1f1;
-    font-weight: bold;
+    color: #0f0f0f;
+    box-shadow: 0px 0px 10px black;
 }
 
 /* fundo do site  */
@@ -228,6 +199,7 @@ a:link {
 
 .contato-txt h1{
     color: #f1f1f1;
+    text-shadow: blue 0.1em 0.1em 0.1em;
 }
 
 .contato-txt ul{

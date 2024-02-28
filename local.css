@@ -121,7 +121,7 @@ body{
     margin: 30px;
     background-color: #0f0f0fdc;
     border-radius: 20px;
-    box-shadow: 0px 0px 30px #000000;
+    box-shadow: 0px 0px 30px #0f0f0f;
     backdrop-filter: blur(50px);
     color: #f1f1f1;
 }
@@ -188,6 +188,7 @@ body{
 
 .contato-txt h1{
     color: #f1f1f1;
+    text-shadow: blue 0.1em 0.1em 0.1em;
 }
 
 .contato-txt ul{
