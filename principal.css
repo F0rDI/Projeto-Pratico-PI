@@ -134,6 +134,7 @@ header .menu #pagina-principal:hover{
 .textos span{
     font-weight: bold;
     color: blue;
+    text-shadow: #8d8d8d 0.1em 0.1em 0.1em;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-color: 2px;
 }

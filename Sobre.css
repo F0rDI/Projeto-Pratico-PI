@@ -128,6 +128,7 @@ header .menu #pagina-principal:hover{
 }
 .titulo{
     color: blue;
+    text-shadow: #8d8d8d 0.1em 0.1em 0.1em;
     font-size: 25px;
     margin-bottom: 10px;
 }
@@ -152,6 +153,7 @@ header .menu #pagina-principal:hover{
     margin-top: 20px;
     text-align: center;
     color: blue;
+    text-shadow: #8d8d8d 0.1em 0.1em 0.1em;
 }
 .img-professor img{
     width: 130px;
