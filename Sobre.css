@@ -71,6 +71,15 @@ header{
     color: #f1f1f1;
 }
 
+header .menu #pagina-principal{
+    color: var(--txtgeral);
+    border: 1px solid #f1f1f14d;
+    color: #8f8e8e;
+    box-shadow: 0 0 10px #f1f1f165;
+}
+header .menu #pagina-principal:hover{
+    color: #f1f1f1;
+}
 
 /* logo do site */
 

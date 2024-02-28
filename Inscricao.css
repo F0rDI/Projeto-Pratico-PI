@@ -31,6 +31,29 @@ header{
     border-radius: 20px;
     box-shadow: 0px 0px 30px #000000;
 }
+.botao-inscri{
+    font-weight: bold;
+    font-size: 1rem;
+    backdrop-filter: blur(50px);
+    
+    transition: scale 0.25s ease;
+    color: #0f0f0f;
+    padding: 0.9rem 1rem;
+    box-shadow: 0px 0px 10px#000000;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+.botao-inscri:hover{
+    transform: scale(1.1);
+    background: blue;
+    color: #f1f1f1;
+}
+.botao-inscri:active{
+    scale: 0.95;
+    color: #f1f1f1;
+}
+
 .links a{
     text-decoration: none;
     color: #8f8e8e;
@@ -45,6 +68,15 @@ header{
     color: #f1f1f1;
 }
 
+header .menu #pagina-principal{
+    color: var(--txtgeral);
+    border: 1px solid #f1f1f14d;
+    color: #f1f1f1;
+    box-shadow: 0 0 10px #f1f1f165;
+}
+header .menu #pagina-principal:hover{
+    color: #f1f1f1;
+}
 
 /* logo do site */
 
