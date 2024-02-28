@@ -20,31 +20,26 @@ header{
     position: sticky;
     top: 0;
     padding: 1rem 2rem;
-    z-index: 9999;
+    position: sticky;
+    z-index: 99999;
 }
 .menu{
+    padding: 0 2rem;
+    top: 0;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
-.menu .links{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background-color: #0f0f0f;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px #000000;
-}
 .botao-inscri{
     font-weight: bold;
     font-size: 1rem;
     backdrop-filter: blur(50px);
-    transition: 0.25s ease;
+    
+    transition: scale 0.25s ease;
     color: #0f0f0f;
     padding: 0.9rem 1rem;
     box-shadow: 0px 0px 10px#000000;
@@ -58,9 +53,18 @@ header{
     color: #f1f1f1;
 }
 .botao-inscri:active{
+    scale: 0.95;
     color: #f1f1f1;
 }
-
+.menu .links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #000000;
+}
 .links a{
     text-decoration: none;
     color: #8f8e8e;
@@ -78,7 +82,7 @@ header{
 header .menu #pagina-principal{
     color: var(--txtgeral);
     border: 1px solid #f1f1f14d;
-    color: #f1f1f1;
+    color: #8f8e8e;
     box-shadow: 0 0 10px #f1f1f165;
 }
 header .menu #pagina-principal:hover{
@@ -88,22 +92,13 @@ header .menu #pagina-principal:hover{
 /* logo do site */
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     font-size: 24px;
     letter-spacing: 4px;
 }
 
-/* fundo do site  */
-
-body{
-    background: url("img-teste.jpg") no-repeat center center;
-    background-size: cover;
-    height: 100%;
-    backdrop-filter: blur(5px);
-}
-
-/* configurações dos links */
+/* links */
 
 a:link {
     display: inline-block;
@@ -111,152 +106,71 @@ a:link {
     text-decoration: none;
 }
 
-/* configurações de inscrição - endereço */
+/* configurar do body */
 
-.endereco{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 80px;
-
+body{
+    background: url("Imagemfaculdade1.jpeg") no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    backdrop-filter: blur(5px);
 }
 
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
+/* configurar o corpo do site */
 
-/* Perguntas */
-
-.perguntas{
-    margin-top: 60px;
-    padding: 30px;
-    text-align: center;
-    background-color: #0f0f0f;
+.txt{
+    margin: 30px;
+    background-color: #0f0f0fdc;
     border-radius: 20px;
-}
-.perguntas-txt{
+    box-shadow: 0px 0px 30px #000000;
+    backdrop-filter: blur(50px);
     color: #f1f1f1;
-    text-align: left;
-    font-size: 20px;
 }
-
-.perguntas-txt .campo{
-    display: flex;
-    flex-direction: column;
-    padding: 0.9vh
+.txt p{
+    font-weight: bold;
 }
-.campo input{
-    padding: 0.8vh;
-    border-radius: 5px;
-    outline: none;
-    margin: 5px;
-}
-
-/* Endereço */
-
-.endereco-box{
-    margin-top: 60px;
-    padding: 30px;
+.txt .titulo{
+    align-items: center;
     text-align: center;
-    background-color: #0f0f0f;
-    border-radius: 20px;
-}
-.endereco h1{
+    color: #f1f1f1;
+    padding: 20px;
+    text-shadow: blue 0.1em 0.1em 0.1em;
     font-size: 30px;
-    margin-bottom: 30px; 
-    color: #f1f1f1;
 }
-.endereco-txt{
-    color: #f1f1f1;
-    text-align: left;
-    font-size: 20px;
-}
-.endereco-txt .campo{
+.txt-img{
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    padding: 0.9vh
+    padding: 40px;
 }
 
-/* Campo */
-
-.campo input{
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    margin: 5px;
-}
-.campo input:focus{
-    border: 3px solid blue;
-}
-.campo  input:valid{
-    border: 3px solid green;   
-}
-.campo input:invalid{
-    border: 3px solid red;
-}
-
-#estado{
-    border-radius: 5px;
-    padding: 10px 10px;
-}
-
-/* Check-box */
-
-.check-horarios{
+.texto{  
     align-items: center;
     text-align: center;
-    margin-top: 20px;
-    margin-inline: 17rem;
-    background-color: #0f0f0f;
+    margin: 50px;
+    padding: 20px;
+}
+.mapa-local{
+    padding: 3px;
+}
+.img-faculdade{
+    width: 50%;
+    height: 50%;
     border-radius: 20px;
-    padding: 30px;
-}
-.check-horarios .check-text{
-    padding: 2px;    
-}
-.check-horarios label{
-    padding: 5px;
-    color: #f1f1f1;
-}
-
-/* termos */
-
-.check-termos{
-    text-align: center;
-    margin-top: 20px;
-    margin-inline: 23rem;
-    background-color: #0f0f0f;
-    color: #f1f1f1;
-    border-radius: 20px;
-    padding: 15px;
-}
-
-/* Botão */
-
-.btn{
-    text-align: center;
-    margin-top: 30px;
-}
-.btn button{
-    padding: 10px 20px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    background-color: #0f0f0f;
-    color: #f1f1f1;
-    font-size: 20px;
-    cursor: pointer;
     transition: 0.2s;
-    margin-right: 15px;
 }
-.btn button:hover{
-    box-shadow: 0px 0px 30px #0f0f0f;
-    background-color: blue;
+.img-faculdade:hover{
     transform: scale(1.1);
+    box-shadow: 0px 0px 10px #f1f1f1;
+}
+.mapa-local img{
+    width: 50%;
+    height: 50%;
+    border-radius: 20px;
+}
+.map-responsive iframe{
+    padding: 0px 10px;
+    width: 100%;
+    height: 70vh;
+    border-radius: 15px;
 }
 
 /* configurar o Rodapé */
@@ -317,21 +231,29 @@ a:link {
     transition: 0.2s;
     
 }
-
 .contato-txt a:hover{
     color: blue;
     transform: scale(1.1);
 }
+
 @media screen and (max-width: 1150px) {
     .menu {
         flex-direction: column;
         gap: 20px;
     }
-    .flex{
-        flex-wrap: wrap;
+    .txt-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    .img-faculdade{
+        width: 50%;
+        height: 50%;
     }
 }
-@media screen and (max-width: 450px) {
+@media  screen and (max-width: 450px) {
     .menu {
         flex-direction: column;
         gap: 20px;
@@ -343,7 +265,14 @@ a:link {
     .logo{
         display: none;
     }
-    .flex{
-        flex-wrap: wrap;
+    .txt{
+        margin: 0;
+    }
+    .img-faculdade{
+        width: 100%;
+        height: 100%;
+    }
+    .texto{
+        margin: 0;
     }
 }

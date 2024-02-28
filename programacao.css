@@ -7,7 +7,6 @@
 li{
     list-style: none;
 }
-
 nav{
     text-align: center;
     margin: auto;
@@ -15,36 +14,27 @@ nav{
     justify-content: center;
     display: flex;
 }
-
 header{
     position: sticky;
     top: 0;
     padding: 1rem 2rem;
-    z-index: 9999;
+    z-index: 99999;
 }
 .menu{
+    padding: 0 2rem;
+    top: 0;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu .links{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background-color: #0f0f0f;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px #000000;
-}
 .botao-inscri{
     font-weight: bold;
     font-size: 1rem;
     backdrop-filter: blur(50px);
-    transition: 0.25s ease;
+    transition: scale 0.25s ease;
     color: #0f0f0f;
     padding: 0.9rem 1rem;
     box-shadow: 0px 0px 10px#000000;
@@ -58,9 +48,18 @@ header{
     color: #f1f1f1;
 }
 .botao-inscri:active{
+    scale: 0.95;
     color: #f1f1f1;
 }
-
+.menu .links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #000000;
+}
 .links a{
     text-decoration: none;
     color: #8f8e8e;
@@ -78,7 +77,7 @@ header{
 header .menu #pagina-principal{
     color: var(--txtgeral);
     border: 1px solid #f1f1f14d;
-    color: #f1f1f1;
+    color: #8f8e8e;
     box-shadow: 0 0 10px #f1f1f165;
 }
 header .menu #pagina-principal:hover{
@@ -94,7 +93,15 @@ header .menu #pagina-principal:hover{
     letter-spacing: 4px;
 }
 
-/* fundo do site  */
+/* links */
+
+a:link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* configurar do body */
 
 body{
     background: url("img-teste.jpg") no-repeat center center;
@@ -103,160 +110,45 @@ body{
     backdrop-filter: blur(5px);
 }
 
-/* configurações dos links */
+/* configurar o corpo do site */
 
-a:link {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-}
-
-/* configurações de inscrição - endereço */
-
-.endereco{
+.tabela{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 80px;
-
-}
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-/* Perguntas */
-
-.perguntas{
-    margin-top: 60px;
-    padding: 30px;
-    text-align: center;
-    background-color: #0f0f0f;
-    border-radius: 20px;
-}
-.perguntas-txt{
-    color: #f1f1f1;
-    text-align: left;
-    font-size: 20px;
-}
-
-.perguntas-txt .campo{
-    display: flex;
     flex-direction: column;
-    padding: 0.9vh
-}
-.campo input{
-    padding: 0.8vh;
-    border-radius: 5px;
-    outline: none;
-    margin: 5px;
-}
-
-/* Endereço */
-
-.endereco-box{
-    margin-top: 60px;
-    padding: 30px;
-    text-align: center;
-    background-color: #0f0f0f;
-    border-radius: 20px;
-}
-.endereco h1{
-    font-size: 30px;
-    margin-bottom: 30px; 
-    color: #f1f1f1;
-}
-.endereco-txt{
-    color: #f1f1f1;
-    text-align: left;
-    font-size: 20px;
-}
-.endereco-txt .campo{
-    display: flex;
-    flex-direction: column;
-    padding: 0.9vh
-}
-
-/* Campo */
-
-.campo input{
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    margin: 5px;
-}
-.campo input:focus{
-    border: 3px solid blue;
-}
-.campo  input:valid{
-    border: 3px solid green;   
-}
-.campo input:invalid{
-    border: 3px solid red;
-}
-
-#estado{
-    border-radius: 5px;
-    padding: 10px 10px;
-}
-
-/* Check-box */
-
-.check-horarios{
-    align-items: center;
-    text-align: center;
-    margin-top: 20px;
-    margin-inline: 17rem;
-    background-color: #0f0f0f;
-    border-radius: 20px;
-    padding: 30px;
-}
-.check-horarios .check-text{
-    padding: 2px;    
-}
-.check-horarios label{
-    padding: 5px;
-    color: #f1f1f1;
-}
-
-/* termos */
-
-.check-termos{
-    text-align: center;
-    margin-top: 20px;
-    margin-inline: 23rem;
-    background-color: #0f0f0f;
-    color: #f1f1f1;
-    border-radius: 20px;
-    padding: 15px;
-}
-
-/* Botão */
-
-.btn{
-    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
     margin-top: 30px;
 }
-.btn button{
-    padding: 10px 20px;
-    border-radius: 15px;
-    outline: none;
-    border: none;
+.tabela-toda{
+    margin-top: 20px;
+}
+.cabeca-tabela th{
     background-color: #0f0f0f;
     color: #f1f1f1;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.2s;
-    margin-right: 15px;
+    font-size: 20px;    
+    height: 50px;
+    border-radius: 5px;
 }
-.btn button:hover{
-    box-shadow: 0px 0px 30px #0f0f0f;
-    background-color: blue;
-    transform: scale(1.1);
+.corpo-tabela td{
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: #8f8e8e;
+    color: #0f0f0f;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center; 
+    transition: 0.1s;
+}
+.corpo-tabela td:hover{
+    box-shadow: 0px 0px 10px #f1f1f1;
+    color: #0f0f0f;
+    transform: scale(1.0);
+}
+.tabela-toda .nada{
+    background-color: #f1f1f1;
 }
 
 /* configurar o Rodapé */
@@ -266,7 +158,9 @@ a:link {
     color: #8f8e8e;
     text-align: center;
     padding: 20px;
+    position: static;
     bottom: 0;
+    margin-top: 100px;
     width: 100%;
 }
 
@@ -275,7 +169,6 @@ a:link {
 .contato-txt h1{
     color: #f1f1f1;
 }
-
 .contato-txt ul{
     display: flex;
     align-items: center;
@@ -283,10 +176,6 @@ a:link {
     justify-content: center;
     flex-direction: column;
 }
-.contato-txt a:visited{
-    color: #8f8e8e;
-}
-
 .rod img{
     width: 2.2vh;
     margin-right: 5px; 
@@ -301,14 +190,12 @@ a:link {
     justify-content: center;
     align-items: center;
 }
-
 .rod li {
     list-style-type: none;
     font-size: 15px;
     font-weight: bold;
     padding: 3px;
 }
-
 .contato-txt a{
     text-decoration: none;
     color: #8f8e8e;
@@ -317,21 +204,18 @@ a:link {
     transition: 0.2s;
     
 }
-
 .contato-txt a:hover{
     color: blue;
     transform: scale(1.1);
 }
+
 @media screen and (max-width: 1150px) {
     .menu {
         flex-direction: column;
         gap: 20px;
     }
-    .flex{
-        flex-wrap: wrap;
-    }
 }
-@media screen and (max-width: 450px) {
+@media  screen and (max-width: 450px) {
     .menu {
         flex-direction: column;
         gap: 20px;
@@ -342,8 +226,5 @@ a:link {
     }
     .logo{
         display: none;
-    }
-    .flex{
-        flex-wrap: wrap;
     }
 }
