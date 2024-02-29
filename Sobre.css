@@ -292,5 +292,8 @@ a:link {
         align-items: center;
         justify-items: center;
     }
+    .txt-ceo{
+        margin-bottom: 30px;
+    }
     
 }
