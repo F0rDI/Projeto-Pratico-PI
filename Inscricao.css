@@ -7,7 +7,6 @@
 li{
     list-style: none;
 }
-
 nav{
     text-align: center;
     margin: auto;
@@ -15,37 +14,28 @@ nav{
     justify-content: center;
     display: flex;
 }
-
 header{
     position: sticky;
     top: 0;
     padding: 1rem 2rem;
-    z-index: 9999;
+    z-index: 99999;
 }
 .menu{
+    padding: 0 2rem;
+    top: 0;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu .links{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background-color: #0f0f0f;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px #000000;
-}
 .botao-inscri{
     font-weight: bold;
     font-size: 1rem;
     backdrop-filter: blur(50px);
     background-color: #8f8e8ebb;
-    transition: 0.25s ease;
+    transition: scale 0.25s ease;
     color: #0f0f0f;
     padding: 0.9rem 1rem;
     box-shadow: 0px 0px 10px#000000;
@@ -59,9 +49,18 @@ header{
     color: #f1f1f1;
 }
 .botao-inscri:active{
+    scale: 0.95;
     color: #f1f1f1;
 }
-
+.menu .links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: #0f0f0f;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #000000;
+}
 .links a{
     text-decoration: none;
     color: #8f8e8e;
@@ -79,7 +78,7 @@ header{
 header .menu #pagina-principal{
     color: var(--txtgeral);
     border: 1px solid #f1f1f14d;
-    color: #f1f1f1;
+    color: #0f0f0f;
     box-shadow: 0 0 10px #f1f1f165;
 }
 header .menu #pagina-principal:hover{
@@ -326,33 +325,14 @@ a:link {
 @media screen and (max-width: 1150px) {
     .menu {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+    }
+    .links a{
+        padding: 0.5rem;
     }
     .flex{
         flex-direction: column;
         margin-top: 20px;
-        gap: 0;
-    }
-    .check-termos{
-        margin-inline: 210px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .menu {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .menu .links{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .logo{
-        display: none;
-    }
-    .flex{
-        flex-direction: column;
-        margin-top: 20px;
-        gap: 0;
     }
     .check-termos{
         margin-inline: 210px;

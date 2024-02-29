@@ -260,29 +260,11 @@ a:link {
 @media screen and (max-width: 1150px) {
     .menu {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+        margin-bottom: 20px;
     }
-    .professores-hist{
-        flex-direction: column;
-    }
-    .txt-professor{
-        text-align: center;
-        align-items: center;
-        justify-items: center;
-    }
-    
-}
-@media  screen and (max-width: 450px) {
-    .menu {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .menu .links{
-        flex-direction: column;
-        gap: 20px;
-    }
-    .logo{
-        display: none;
+    .links a{
+        padding: 0.5rem;
     }
     .professores-hist{
         flex-direction: column;
@@ -293,7 +275,8 @@ a:link {
         justify-items: center;
     }
     .txt-ceo{
-        margin-bottom: 30px;
+        margin: 20px;
+        margin-bottom: 50px;
     }
     
 }
