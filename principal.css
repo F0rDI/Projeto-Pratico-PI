@@ -251,23 +251,9 @@ a:link {
     .menu {
         flex-direction: column;
         gap: 10px;
-        
-    }
-    .menu .links{
-        border-radius: 10px;
-        gap: 2rem;
-        
     }
     .links a{
-        font-size: 15px;
-        padding: 1px;
-    }
-    .links a:hover{
-        transform: scale(1.04);
-    }
-    .links ul{
-        padding: 3px;
-        
+        padding: 0.5rem;
     }
     .data{
         margin-top: 20vh;
@@ -286,5 +272,25 @@ a:link {
     }
     .box-local{
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 450px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu .links{
+        border-radius: 10px;
+        gap: 1.3rem;
+    }
+    .links a{
+        font-size: 13px;
+        padding: 1px;
+    }
+    .links a:hover{
+        transform: scale(1.04);
+    }
+    .links ul{
+        padding: 3px;
     }
 }

@@ -259,3 +259,26 @@ body{
         height: 100%;
     }
 }
+@media screen and (max-width: 450px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menu .links{
+        border-radius: 10px;
+        gap: 1.3rem;
+    }
+    .links a{
+        font-size: 13px;
+        padding: 1px;
+    }
+    .links a:hover{
+        transform: scale(1.04);
+    }
+    .links ul{
+        padding: 3px;
+    }
+    .texto{
+        margin: 0;
+    }
+}
