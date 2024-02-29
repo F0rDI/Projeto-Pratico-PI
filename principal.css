@@ -251,9 +251,23 @@ a:link {
     .menu {
         flex-direction: column;
         gap: 10px;
+        
+    }
+    .menu .links{
+        border-radius: 10px;
+        gap: 2rem;
+        
     }
     .links a{
-        padding: 0.3rem;
+        font-size: 15px;
+        padding: 2px;
+    }
+    .links a:hover{
+        transform: scale(1.04);
+    }
+    .links ul{
+        padding: 3px;
+        
     }
     .data{
         margin-top: 20vh;
