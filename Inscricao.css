@@ -119,7 +119,6 @@ a:link {
     align-items: center;
     gap: 40px;
     margin-bottom: 80px;
-
 }
 
 .flex{
@@ -332,7 +331,7 @@ a:link {
     }
     .flex{
         flex-direction: column;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     .check-termos{
         margin-inline: 210px;
@@ -381,7 +380,6 @@ a:link {
     }
     .check-text{
         font-size: 20px;
-        /* width: 100%; */
     }
     .check-termos{
         margin: 550;
