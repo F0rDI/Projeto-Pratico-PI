@@ -34,6 +34,7 @@ header{
     font-weight: bold;
     font-size: 1rem;
     backdrop-filter: blur(50px);
+    background-color: #8f8e8ebb;
     transition: scale 0.25s ease;
     color: #0f0f0f;
     padding: 0.9rem 1rem;
