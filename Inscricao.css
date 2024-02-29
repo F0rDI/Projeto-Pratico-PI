@@ -362,8 +362,29 @@ a:link {
     }
     .flex{
         width: 100%;
+        gap:0;
     }
     .perguntas{
         border-radius: 0px;
+    }
+    .endereco-box{
+        padding: 27px;
+        border-radius: 0px;
+    }
+    .endereco-txt input{
+        padding: 10px 65px 10px 20px;
+    }
+    .check-horarios{
+        padding:50px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .check-text{
+        font-size: 20px;
+        /* width: 100%; */
+    }
+    .check-termos{
+        margin: 550;
+        margin-top: 0;
     }
 }
