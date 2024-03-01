@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
+}
+li{
+    list-style: none;
+}
+
+/* links */
+
+a:link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* configurar do body */
+
+body{
+    background-color: #f1f1f1;
+}
+
+/* configurações dentro do corpo do site */
+
+.termos-de-servico {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.termos-de-servico h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.termos-de-servico h2 {
+    font-size: 20px;
+    margin-top: 30px;
+}
+.contatos-term .textos{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.termos-de-servico p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* contato */
+
+.contato-txt h1{
+    color: #f1f1f1;
+    text-shadow: rgb(73, 73, 204) 0.1em 0.1em 0.1em;
+}
+
+.contato-txt ul{
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+.contato-txt a:visited{
+    color: #0f0f0f;
+}
+
+.rod img{
+    width: 2.2vh;
+    margin-right: 5px;
+}
+.rod{
+    align-items: left;
+}
+
+.rod li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.contato-txt a{
+    text-decoration: none;
+    color: #0f0f0f;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+    
+}
+.contato-txt a:hover{
+    color: blue;
+    transform: scale(1.1);
+}
+
+/* Botão */
+
+.termos-de-servico button{
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+/* configurar o Rodapé */
+
+@media screen and (max-width: 450px) {
+    .texto{
+        padding: 0px;
+    }
+    .botao{
+        padding: 5px 10px;
+        margin: 10px;
+        margin-top: 50px;
+    }
+    .titulo{
+        font-size: 35px;
+    }
+    .links a{
+        font-size: 13px;
+        padding: 1px;
+    }
+    .links a:hover{
+        transform: scale(1.04);
+    }
+    .links ul{
+        padding: 3px;
+    }
+    .textos{
+        margin-top: 80px;
+    }
+    .rodape{
+        margin-top: 50px;
+    }
+}

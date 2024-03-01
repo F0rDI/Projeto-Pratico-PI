@@ -167,10 +167,6 @@ body{
 
 /* configurar o que tem dentro do Rodapé */
 
-.contato-txt h1{
-    color: #f1f1f1;
-    text-shadow: blue 0.1em 0.1em 0.1em;
-}
 .contato-txt ul{
     display: flex;
     align-items: center;

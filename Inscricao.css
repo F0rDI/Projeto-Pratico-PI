@@ -134,7 +134,7 @@ a:link {
     margin-top: 60px;
     padding: 30px;
     text-align: center;
-    background-color: #0f0f0f;
+    background-color: #0f0f0fdc;
     border-radius: 20px;
 }
 .perguntas-txt{
@@ -161,7 +161,7 @@ a:link {
     margin-top: 60px;
     padding: 30px;
     text-align: center;
-    background-color: #0f0f0f;
+    background-color: #0f0f0fdc;
     border-radius: 20px;
 }
 .endereco h1{
@@ -210,7 +210,7 @@ a:link {
     text-align: center;
     margin-top: 20px;
     margin-inline: 17rem;
-    background-color: #0f0f0f;
+    background-color: #0f0f0fdc;
     border-radius: 20px;
     padding: 30px;
 }
@@ -228,10 +228,21 @@ a:link {
     text-align: center;
     margin-top: 20px;
     margin-inline: 23rem;
-    background-color: #0f0f0f;
+    background-color: #0f0f0fdc;
     color: #f1f1f1;
     border-radius: 20px;
     padding: 15px;
+}
+.termos{
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.2s;
+    color: blue;
+}
+.termos:hover{
+    color: #f1f1f1;
+    transform: scale(1.1);
 }
 
 /* Botão */
@@ -270,10 +281,6 @@ a:link {
 }
 
 /* configurar o que tem dentro do Rodapé */
-
-.contato-txt h1{
-    color: #f1f1f1;
-}
 
 .contato-txt ul{
     display: flex;
