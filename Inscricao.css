@@ -392,4 +392,11 @@ a:link {
         margin: 550;
         margin-top: 0;
     }
+    .logo{
+        display: none;
+    }
+    header .menu #pagina-principal{
+        border: 3px solid #f1f1f14d;
+        color: #8f8e8e;
+    }
 }

@@ -277,4 +277,11 @@ body{
     .rodape{
         margin-top: 50px;
     }
+    .logo{
+        display: none;
+    }
+    header .menu #pagina-principal{
+        border: 3px solid #f1f1f14d;
+        color: #8f8e8e;
+    }
 }
