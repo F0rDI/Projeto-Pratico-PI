@@ -293,4 +293,12 @@ a:link {
     .links ul{
         padding: 3px;
     }
+    .ceo{
+        flex-direction: column;
+        gap: 20px;
+        margin: 0;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        text-align: center;
+    }
 }

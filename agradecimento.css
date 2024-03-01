@@ -250,8 +250,8 @@ body{
         gap: 1.3rem;
     }
     .agradecimento{
-        margin-top: 20vh;
-        margin-inline: 5vh;
+        padding: 25px;
+        border-radius: 0;
     }
     .texto{
         padding: 0px;
